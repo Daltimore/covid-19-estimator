@@ -20,10 +20,10 @@ const covid19ImpactEstimator = (data) => {
     powerFactor = Math.floor(inputData.timeToElapse / 3);
     period = inputData.timeToElapse;
   } else if (inputData.periodType === 'weeks') {
-    powerFactor = Math.floor((inputData.timeToElapse * 7) / 3);
+    powerFactor = Math.floor((inputData.timeToElapse * 7));
     period = inputData.timeToElapse * 7;
   } else {
-    powerFactor = Math.floor((inputData.timeToElapse * 30) / 3);
+    powerFactor = Math.floor((inputData.timeToElapse * 30));
     period = inputData.timeToElapse * 30;
   }
   // impactEstimation Section
