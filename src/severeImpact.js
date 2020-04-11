@@ -15,10 +15,14 @@ const severeImpact = (data) => {
   const casesForICUByRequestedTime = Math.trunc(0.05 * infectionsByRequestedTime);
   const casesForVentilatorsByRequestedTime = Math.trunc(0.02 * infectionsByRequestedTime);
 
-  const dollarsInFlight = (infectionsByRequestedTime
-    * data.region.avgDailyIncomePopulation
-    * data.region.avgDailyIncomeInUSD
-    * getTimeToElapse(data)).toFixed(2);
+  const { avgDailyIncomePopulation, avgDailyIncomeInUSD } = data.region;
+
+  const dollarsInFlight = Math.trunc(
+    (infectionsByRequestedTime
+    * avgDailyIncomePopulation
+    * avgDailyIncomeInUSD)
+    / getTimeToElapse(data)
+  );
 
 
   return {
