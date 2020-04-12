@@ -15,7 +15,7 @@ export default {
 <style scoped>
   #nav-bar .main-container {
     background: #D2A53E;
-    padding: 6px;
+    padding: 7px;
   }
 
   #nav-bar .main-container h3 {
