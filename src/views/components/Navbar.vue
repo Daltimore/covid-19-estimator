@@ -14,12 +14,13 @@ export default {
 
 <style scoped>
   #nav-bar .main-container {
-    background: #D2A53E;
+    background: #161A29;
     padding: 7px;
   }
 
   #nav-bar .main-container h3 {
    font-size: 21px;
+   color: #ffffff
   }
 
 </style>

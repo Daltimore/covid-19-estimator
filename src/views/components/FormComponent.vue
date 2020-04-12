@@ -143,7 +143,7 @@ export default {
   }
   #covid-form .submit{
     padding: 10px;
-    background: #D2A53E;
+    background: #161A29;
     color: #ffffff;
     border-radius: 5px;
     font-weight: 500;
