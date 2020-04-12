@@ -9,16 +9,12 @@
         <ResultComponent :report="report.severeImpact" :input="formData" class="severe-impact" title="Estimated Severe Impact"  sub-title="According to Harvard Medical School / Massachusetts General Hospital" />
       </div>
     </transition>
-    <div class="footer">
-      <Footer />
-    </div>
   </main>
 </template>
 
 <script>
 import FormComponent from './components/FormComponent'
 import NavBar from './components/Navbar'
-import Footer from './components/Footer'
 import estimator from '../estimator'
 import ResultComponent from './components/ResultComponent'
 
@@ -45,7 +41,6 @@ export default {
   components: {
     FormComponent,
     NavBar,
-    Footer,
     ResultComponent
   },
   methods: {
@@ -64,10 +59,6 @@ export default {
 
 
 <style scoped>
-#home {
-  overflow: hidden;
-  overflow-y: scroll;
-}
 
 #home .results{
   padding: 20px 0;

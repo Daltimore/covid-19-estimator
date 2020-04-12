@@ -63,7 +63,6 @@ export default {
 #result .data label{
   font-size: 13px;
   font-weight: 300;
-  opacity: 0.5;
   margin-right: 25px;
 }
 
